@@ -10,21 +10,16 @@
 void print_array(int *a, int n)
 
 {
-int i;
+	int i;
 
-i = 0;
-while (i < n)
-{
-printf("%d", a[i]);
-
-if (i < n - 1)
-{
-printf(", ");
-}
-
-i++;
-}
-
-printf("\n")
-;
+	for (i = 0; i < n; i++)
+	{
+		if (a[i])
+		{
+			printf("%d", a[i]);
+			if (i < n - 1)
+				printf(", ");
+		}
+	}
+	printf("\n");
 }
