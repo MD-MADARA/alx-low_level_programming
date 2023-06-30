@@ -7,21 +7,21 @@
 char *rot13(char *s)
 {
 	char *p = s;
+	char lett[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char ro13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i;
 
 	while (*p)
 	{
-		if ((*p >= 'a' && *p < 'n') || (*p >= 'A' && *p < 'N'))
+		for (i = 0; i < 52; i++)
 		{
-			*p += 13;
-			p++;
+			if (*p == lett[i])
+			{
+				*p = ro13[i];
+				break;
+			}
 		}
-		else if ((*p >= 'n' && *p <= 'z') || (*p >= 'N' && *p <= 'Z'))
-		{
-			*p -= 13;
-			p++;
-		}
-		else
-			p++;
+		p++;
 	}
 	return (s);
 }
