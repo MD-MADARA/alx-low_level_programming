@@ -18,6 +18,6 @@ void print_diagsums(int *a, int size)
 		r_diag += a[size - 1 - i]; /* a[size - 1] = last element index */
 		a += size;
 	}
-	printf('0' + l_diag);
-	printf('0' + r_diag);
+	_putchar('0' + l_diag);
+	_putchar('0' + r_diag);
 }
