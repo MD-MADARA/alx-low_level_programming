@@ -19,5 +19,8 @@ void print_diagsums(int *a, int size)
 		a += size;
 	}
 	_putchar('0' + l_diag);
+	_putchar(',');
+	_putchar(' ');
 	_putchar('0' + r_diag);
+	_putchar('\n');
 }
