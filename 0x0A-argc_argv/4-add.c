@@ -18,8 +18,6 @@ int main(int argc, char **argv)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
-			if (j = 0 && argv[i][j] == '-')
-				continue;
 			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
