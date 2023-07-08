@@ -24,7 +24,6 @@ int main(int ac, char **argv)
 		return (0);
 	}
 	cents = atoi(argv[1]);
-	printf("cents = %d\n", cents);
 	for (i = 0; coins[i]; i++)
 	{
 
