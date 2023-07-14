@@ -5,10 +5,12 @@
  *
  * Return: a pointer to the allocated memory.
  */
-void malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
 	void *res;
 
-	if (!res = malloc(b))
+	res = malloc(b);
+	if (!res)
 		exit(98);
+	return (res);
 }
