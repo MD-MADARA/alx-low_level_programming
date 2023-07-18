@@ -1,6 +1,4 @@
 #include "dog.h"
-#include <stdlib.h>
-
 /**
  **_strcpy - copies
  *@src: source
