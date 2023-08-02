@@ -1,6 +1,4 @@
 #include "lists.h"
-int search_list(list_addr *head, void *value);
-list_addr *add_node_end(list_addr **head, void *n);
 /**
  * print_listint_safe - a function that prints a listint_t linked list
  * This function can print lists with a loop.
