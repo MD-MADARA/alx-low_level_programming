@@ -19,17 +19,6 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/**
- * struct list_addr - singly linked list
- * @address: value
- * @next: next node
- * Description: singly linked list
- */
-typedef struct list_addr
-{
-	void *address;
-	struct list_addr *next;
-} list_addr;
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
@@ -46,7 +35,5 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
-list_addr *add_node_end(list_addr **head, void *n);
-int search_list(list_addr *head, void *value);
 
 #endif
